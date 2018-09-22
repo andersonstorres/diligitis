@@ -1,0 +1,5 @@
+package com.diligitis.api.configuration;
+
+public class MongoConfig {
+
+}

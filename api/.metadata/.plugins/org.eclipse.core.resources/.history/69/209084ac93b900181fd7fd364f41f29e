@@ -1,0 +1,12 @@
+package com.diligitis.api.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.diligitis.api.entity.User;
+
+public interface UserRepository extends MongoRepository<User,Long> {
+
+	@Query("{ 'firstname' : ?0 }")
+	List<Person> findByThePersonsFirstname(String firstname);
+	
+}

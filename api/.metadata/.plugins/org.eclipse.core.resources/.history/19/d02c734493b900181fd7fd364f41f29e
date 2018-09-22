@@ -1,0 +1,5 @@
+package com.diligitis.api.repository;
+
+public class UserRepository {
+
+}

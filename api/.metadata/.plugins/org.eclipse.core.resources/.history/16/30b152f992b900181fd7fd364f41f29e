@@ -1,0 +1,5 @@
+package com.diligitis.api.entity;
+
+public class User {
+
+}
