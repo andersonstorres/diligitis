@@ -1,0 +1,22 @@
+package com.diligitis.api.endpoint;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.diligitis.api.repository.UserRepository;
+
+@Controller
+public class UserEndPoint {
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+    @GetMapping("/user")
+    @ResponseBody
+    public User getUser(@RequestParam(name="name", required=false, defaultValue="Java Fan") String name) {
+
+        return new Welcome(String.format(welcomemsg, name));
+
+    }
+
+}

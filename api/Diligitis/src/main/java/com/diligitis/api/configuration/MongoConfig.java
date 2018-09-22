@@ -2,10 +2,14 @@ package com.diligitis.api.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoDatabase;
 
 @Configuration
+@EnableMongoRepositories(basePackages = "com.diligitis.api.repository")
 public class MongoConfig extends AbstractMongoConfiguration {
   
     @Override
@@ -20,6 +24,25 @@ public class MongoConfig extends AbstractMongoConfiguration {
 
 	@Override
 	public MongoClient mongoClient() {
-		return new MongoClient("127.0.0.1", 27017);
+		return new MongoClient(getUri());
+	}
+	
+	public MongoClientURI getUri() {
+		
+		String stringConnection = "mongodb://torres:180687@diligitis-shard-00-00-gis5c.gcp.mongodb.net:27017/admin?ssl=true&replicaSet=diligitis-shard-0&authSource=admin&retryWrites=true";
+		//String stringConnection = "mongodb+srv://torres:torres@cluster0.mongodb.net/";
+		
+		try {
+			return new MongoClientURI(stringConnection);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public MongoDatabase getDatabase() {
+		
+		return mongoClient().getDatabase(getDatabaseName());
+		
 	}
 }

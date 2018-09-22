@@ -1,0 +1,38 @@
+package com.diligitis.api.configuration;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
+
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoDatabase;
+
+@Configuration
+public class MongoConfig extends AbstractMongoConfiguration {
+  
+    @Override
+    protected String getDatabaseName() {
+        return "diligitis";
+    }
+  
+    @Override
+    protected String getMappingBasePackage() {
+        return "com.diligitis.api.entity";
+    }
+
+	@Override
+	public MongoClient mongoClient() {
+		return new MongoClient(getUri());
+	}
+	
+	public MongoClientURI getUri() {
+		return new MongoClientURI(
+			    "mongodb+srv://diligitis:torres@cluster0.mongodb.net/");
+	}
+	
+	public MongoDatabase getDatabase() {
+		
+		mongoClient().getDatabase(getDatabaseName());
+		
+	}
+}

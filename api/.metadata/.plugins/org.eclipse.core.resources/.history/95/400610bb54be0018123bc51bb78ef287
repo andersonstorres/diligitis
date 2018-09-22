@@ -1,0 +1,28 @@
+package com.diligitis.api.endpoint;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.diligitis.api.entity.User;
+import com.diligitis.api.repository.UserRepository;
+
+@Controller
+public class UserEndPoint {
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+    @GetMapping("/users")
+    @ResponseBody
+    public List<User> getUsers(@RequestParam(name="name", required=false, defaultValue="Java Fan") String name) {
+
+        return userRepository.findAll();
+
+    }
+
+}
