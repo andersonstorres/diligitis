@@ -4,8 +4,6 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.diligitis.api.enuns.EnumSexo;
-
 @Document(collection = "User")
 public class User {
 	
@@ -14,9 +12,6 @@ public class User {
 	
 	private Long id;
 	private String nome;
-	private EnumSexo sexo;
-	private long idade;
-	
 	
 	
 	public ObjectId get_id() {

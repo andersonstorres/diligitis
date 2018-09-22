@@ -1461,3 +1461,23 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2018-09-22 10:41:46,970 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-09-22 10:41:46,973 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-09-22 10:41:46,973 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/homeoffice/workspaceExtendit/workspaceDiligitis/api/Diligitis/src/test/resources
+2018-09-22 16:00:05,852 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-22 16:00:05,869 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-22 16:00:05,869 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-22 16:00:05,871 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-22 16:00:05,872 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/homeoffice/workspaceExtendit/workspaceDiligitis/api/Diligitis/src/test/resources
+2018-09-22 16:19:50,581 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-22 16:19:50,581 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-22 16:19:50,582 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-22 16:19:50,589 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-22 16:19:50,590 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/homeoffice/workspaceExtendit/workspaceDiligitis/api/Diligitis/src/test/resources
+2018-09-22 16:21:43,603 [Worker-398] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-22 16:21:43,604 [Worker-398] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-22 16:21:43,604 [Worker-398] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-22 16:21:43,609 [Worker-398] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-22 16:21:43,609 [Worker-398] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/homeoffice/workspaceExtendit/workspaceDiligitis/api/Diligitis/src/test/resources
+2018-09-22 16:22:14,221 [Worker-402] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-22 16:22:14,222 [Worker-402] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-22 16:22:14,223 [Worker-402] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-22 16:22:14,227 [Worker-402] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-22 16:22:14,227 [Worker-402] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/homeoffice/workspaceExtendit/workspaceDiligitis/api/Diligitis/src/test/resources

@@ -1,0 +1,16 @@
+package com.diligitis.api.enuns;
+
+public enum EnumSexo {
+	
+	MASCULINO("M"),
+	FEMININO("F");
+	
+	private String sigla;
+	
+	public EnumSexo(String sigla) {
+		this.sigla = sigla;
+	}
+	
+	
+
+}

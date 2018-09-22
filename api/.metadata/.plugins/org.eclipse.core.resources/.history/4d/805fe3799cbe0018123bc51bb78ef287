@@ -1,0 +1,5 @@
+package com.diligitis.api.enuns;
+
+public enum EnumSexo {
+
+}
