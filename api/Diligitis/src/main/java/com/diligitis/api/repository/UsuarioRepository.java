@@ -6,12 +6,12 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.diligitis.api.entity.User;
+import com.diligitis.api.entity.Usuario;
 
 @Repository
-public interface UserRepository extends MongoRepository<User,Long> {
+public interface UsuarioRepository extends MongoRepository<Usuario,Long> {
 
 	@Query("{ 'nome' : ?0 }")
-	List<User> findByNome(String nome);
+	List<Usuario> findByNome(String nome);
 	
 }

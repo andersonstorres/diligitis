@@ -1,22 +1,37 @@
 package com.diligitis.api.entity;
 
+import java.util.Date;
+
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.diligitis.api.enuns.EnumSexo;
+import com.diligitis.api.enuns.EnumEstadoCivil;
+import com.diligitis.api.enuns.EnumGenero;
+import com.diligitis.api.enuns.EnumInteresses;
+import com.diligitis.api.enuns.EnumSexualidade;
 
-@Document(collection = "User")
-public class User {
+@Document(collection = "Usuario")
+public class Usuario {
 	
 	@Id
 	private ObjectId _id;
 	
 	private Long id;
-	private String nome;
-	private EnumSexo sexo;
-	private long idade;
 	
+	private String email;
+	private String senha;
+	
+	private String nome;
+	private EnumGenero genero;
+	private Date nascimento;
+	private String local;
+	
+	private String sobre;
+	private EnumEstadoCivil estadoCivil;
+	private EnumSexualidade sexualidade;
+	
+	private EnumInteresses interesse;
 	
 	
 	public ObjectId get_id() {
